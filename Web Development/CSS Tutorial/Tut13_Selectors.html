@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>   <!-- define in 3 ways -->
+    <!-- For external CSS file you've to attach here -->
+    <link rel="stylesheet" href="Tut13.css">    <!-- " link:css " -->
+    
+    <!-- Internal CSS -->
+    <style>
+        p {
+            color: darkred !important; 
+            background-color: lightskyblue;
+        }
+    </style>
+    <!-- Whichever is at the END it will be implemented -->
+</head>
+<body>
+    <h3>This is CSS Tutorial</h3>
+    <p>This will give you brief intro about HTML/CSS <br> This is Internal CSS</p>
+    <!-- In-line CSS (Override the Internal CSS Properties)/ Inline NOT Prefered -->
+    <p style="color:blue; background-color:rgb(121, 220, 215)">
+        This will give you brief intro about HTML/CSS <br> This is In-Line CSS
+    </p>
+</body>
+</html>

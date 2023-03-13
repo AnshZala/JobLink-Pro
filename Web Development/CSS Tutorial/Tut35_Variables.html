@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        :root{
+            /* Start with two minus (--) */
+            /* It is like a local variable can't be used out of the Scope */
+            --primary-color: blue;
+            --secondary-color: red;
+        }
+        .container{
+            background-color: var(--secondary-color);
+            display: flex;
+        }
+        .box{
+            background-color: var(--primary-color);
+            width: 120px;   height: 120px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

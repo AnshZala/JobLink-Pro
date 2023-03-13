@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* In general --> Element selector (Like for all paragraph) */
+        p {
+            border:dotted 2px blueviolet;
+        }
+        /* Id selector (#) */
+        #second {
+            color: red;
+        }
+        /* Class selector (.) */
+        .Color {
+            color: blue;
+        }
+        .Bgcolor {
+            background-color:rgb(177, 244, 177);
+        }
+        /* Grouping selector */
+        footer,span {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selector : 4 Types</h3>
+    <p>Element selector</p>
+    <p id="second">Id selector</p>
+    <p class="Color Bgcolor">Class selector</p>
+    <span>Group selector</span>
+    <footer>This is Footer</footer>
+</body>
+</html>

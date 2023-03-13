@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+    <style>
+        .container{
+            border: 2px solid rgb(109, 24, 24);
+            background-color: rgb(236, 66, 100);
+            margin: 33px auto;
+            padding: 25px;
+            width: 900px;
+            border-radius: 11px;
+        }
+        a{
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .btn{
+            background-color: rgb(185, 185, 190);
+            border-radius: 3px;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            height: 27px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+        }
+        /* Pseudo Selectors (Hover, Visited, Active) */
+        a:hover{
+            background-color: rgb(163, 163, 168);
+        }
+        a:visited{
+            color: rgb(122, 7, 53);
+            border: 20px solid rgb(74, 73, 73);
+        }
+        a:active{
+            background-color: rgb(62, 62, 62);
+        }
+        button:hover{
+            background-color: rgb(163, 163, 168);
+        }
+        button:active{
+            border: 1px solid rgb(74, 73, 73);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="count1">
+        <h2>This is heading</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo ipsum odio atque id quis quia dicta similique temporibus consectetur praesentium nisi, voluptate accusamus. Modi, ipsa! Dignissimos ex, impedit velit deleniti repellendus magnam exercitationem nostrum.</p>
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>    
+</body>
+</html>

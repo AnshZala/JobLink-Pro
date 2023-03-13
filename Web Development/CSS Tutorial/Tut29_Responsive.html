@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONT Style Design</title>
+    <style>
+        html{
+            font-size: 15px;
+        }
+        .container{
+            border: 2px solid red;
+            height: 100vh;  /* 100 viewport height (100% of screen) */
+            padding: 3px;
+            font-size: 14px;
+        }
+        h2{
+            text-align: center;
+        }
+        #box1{
+            /* 2 times of it's parent class (container) */
+            font-size: 2em;  /* 15*2 = 30px */
+            /* Padding will be X times of the font size */
+            padding: 1em;  /* 30*1 = 30px (padding) */
+        }
+        #box2{
+            /* 2 times of main HTML Base font */
+            font-size: 2rem; 
+        }
+        #box3{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="box1">This is 1st heading</h2>
+        <h2 id="box2">This is 2nd heading</h2>
+        <h2 id="box3">This is 3rd heading</h2>
+    </div>
+</body>
+</html>
