@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Date</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <span id="date"></span>
+    <script>
+        // let now = new Date();
+        // console.log(now);
+
+        // let dt = now.getDate();
+        // console.log(dt);
+        // let month = now.toLocaleString('default', { month: 'long' });
+        // console.log(month);
+        // let yr = now.getFullYear();
+        // console.log(yr);
+
+        // let newDate = date+" "+month+","+yr;
+        // console.log(newDate);
+        // let fullDate = now.getHours()+":"+now.getMinutes()+":"+now.getSeconds()+" ; "+ dt+" "+month+", "+yr;
+        // console.log(fullDate);
+
+        function date(){
+            let now = new Date();
+            let fullDate = now.getHours()+":"+now.getMinutes()+":"+now.getSeconds()+" ; "+ now.getDate()+" "+now.toLocaleString('default', { month: 'long' })+", "+now.getFullYear();
+            document.getElementById('date').innerHTML = fullDate;
+        }
+        setInterval(date, 1000);
+
+    </script>
+</body>
+</html>

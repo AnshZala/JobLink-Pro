@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User interaction using Javascript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        This is container.
+    </div>
+    <script>
+        // Alert - Non returnable message prompt
+        // alert("This is a demo page!");
+
+        let name = prompt("Enter your name below", "Guest");
+        console.log(name);
+
+        let deletepost = confirm("Do you wanna really delete this post?");
+        // // console.log(deletepost);
+        if(deletepost) {
+            console.log("Your post has been deleted successfully");
+        } else {
+            console.log("Your post has not been deleted");
+        }
+
+        let age = prompt("Enter your real age!", "Age");
+        if(age > 18) {
+            alert("You're allowed");
+            console.log("You're allowed in this club");
+        }
+        else {
+            alert("You're not allowed");
+            console.log("You're NOT allowed in this club");
+        }
+    </script>
+</body>
+</html>

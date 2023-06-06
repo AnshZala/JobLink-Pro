@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Body -->
+
+    <script>
+        var str = "My name is Ansh";
+        console.log(str);
+
+        // Slice can take negative values which denotes the last values from the string array
+        var str1 = str.slice(3,7);
+        console.log(str1);
+
+        // It is the subset of any string (Takes only positive & zero value)
+        var str2 = str.substring(5,9);
+        console.log(str2);
+
+        // It has first index and the length of substring
+        var str3 = str.substr(8,6);
+        console.log(str3);
+
+        var replaceStr = str.replace('name', 'brand');
+        console.log(replaceStr);
+
+        // Upper case
+        console.log(str.toUpperCase());
+        // Concat new string
+        var newStr = str.concat(" with new string");
+        console.log(newStr);
+
+        var char5 = str.charAt(4);
+        console.log(char5);
+    </script>
+</body>
+</html>

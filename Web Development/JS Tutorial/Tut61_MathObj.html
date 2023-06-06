@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        This is container
+    </div>
+    <script>
+        // For all Math objects in javascript
+        let m = Math;
+        console.log(m);
+         
+        // let E = Math.E;
+        // console.log(E);
+
+        let x = 34.849;
+        let y = 69;
+        console.log("The round off value of a and b is", Math.round(x), Math.round(y));
+
+        let pov = Math.pow(3,2);
+        console.log("3^2 =", pov);
+        let sqrt = Math.sqrt(50);
+        console.log("50 sqrt =", sqrt);
+
+        // Cell and Floor
+        console.log("Rounded up/ Ceil value of sqrt(50) is", Math.ceil(sqrt));
+        console.log("Rounded down/ Floor value of sqrt(50) is", Math.floor(sqrt));
+
+        // Generating random number between 0 and 1
+        let r = Math.random();
+        console.log("Random value is", r);
+
+        // for between a and b
+        // --> a + (b-a)*Math.random();
+        let a = 1;
+        let b = 100;
+        let r1_100 = a + (b-a)*Math.random();
+        console.log("Random value between 1 and 100 is",r1_100);
+    </script>
+</body>
+</html>

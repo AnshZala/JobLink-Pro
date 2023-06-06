@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #btn {
+            background-color: red;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 5px 14px;
+            cursor: pointer;
+            color: white;
+            box-shadow: 2px 2px rgb(83, 83, 83);
+        }
+        #btn:hover {
+            background-color: rgb(228, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h3>Browser Events:</h3>
+    <ul>
+        <li>Click</li>
+        <li>Contextmenu</li>
+        <li>Mouseover/ Mouseout</li>
+        <li>Mousedown/ Mouseup</li>
+        <li>Mousemove</li>
+        <li>
+            For form
+            <ul>
+                <li>Submit</li>
+                <li>Focus</li>
+            </ul>
+        </li>
+        <li>DOMContentLoader</li>
+        <li>Transitioned</li>
+    </ul>
+
+    <div class="container">
+        <h2>This is a Demo</h2>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum labore, soluta ipsa voluptas hic nobis error iusto alias aliquid quam! Tempore, dolor iste? Aspernatur ratione iusto temporibus laborum, earum nam ipsum blanditiis nobis ut reprehenderit aliquid error illo placeat voluptate doloremque rem aut officia? Corporis explicabo eum omnis ducimus, animi, reiciendis excepturi quia rerum recusandae nemo, beatae consectetur magni inventore atque porro dolorum libero repellat! Ullam optio praesentium suscipit laboriosam, unde tenetur obcaecati minima cupiditate sequi neque iure minus quia, nihil omnis reiciendis ut. Consequuntur quibusdam expedita eum accusamus quae repellat beatae consequatur. Nobis expedita doloribus ratione illum quis nostrum, neque hic eius est accusantium deleniti tempore iusto aliquid ipsum aut. Distinctio vero quibusdam accusantium laboriosam. Nam quod consequatur quo, reprehenderit, ex aliquam aut incidunt suscipit facilis libero officia eligendi assumenda, non vero. Aliquam quos et accusamus fuga repellat earum provident dicta, dolorum quod sapiente quia officia ipsam magnam! Architecto consequuntur laboriosam aspernatur temporibus facere, rem earum nobis possimus magni distinctio dolores atque totam ea. Ullam asperiores vero debitis ratione voluptatum libero eius repudiandae fuga quisquam aperiam consectetur minus exercitationem officiis natus, tempore provident quos et repellendus! Provident aperiam optio eius, cupiditate quaerat neque tenetur quam accusantium cumque. Fugit ipsum unde aliquid quod eum accusamus quaerat sed temporibus ratione explicabo recusandae a dolor, reprehenderit quidem pariatur vitae, maiores vel quasi, consectetur obcaecati corporis molestiae. Dolores debitis tenetur autem illum.</p>
+
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    </div>
+
+    <script>
+        // Function to hide the para by clicking the button
+        function toggleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+                console.log("Paragram hidden successfully")
+            } else {
+                para.style.display = 'block';
+                console.log("Program shown successfully")
+            }
+        }
+
+        // Using event listeners
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log("Mouse inside");
+        })
+        para.addEventListener('mouseout', function run(){
+            console.log("Mouse is out now");
+        });
+    </script>
+</body>
+</html>

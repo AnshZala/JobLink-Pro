@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        This is container
+    </div>
+
+    <script>
+        function sum(a, b) {
+            let c = a+b;
+            return c;
+        }
+        console.log(sum(5,10));
+
+        // More shorter
+        let sum1 = (a,b) => {
+            return a+b;
+        }
+        console.log(sum1(8,5));
+
+        // Shortcut
+        let sum3 = (a,b) => a+b;
+        console.log(sum3(6,17));
+
+        let obj1 = {
+            greet: "Good morning",
+            names: ['Ansh', 'Dhruv', 'Gnapika'],
+            speak() {
+                this.names.forEach((student) => {
+                    // While using Arrow function
+                    // this in 'this.greet' denotes this for Obj1 object instead of speak
+                    console.log(this.greet + " Kukdoo koo " + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

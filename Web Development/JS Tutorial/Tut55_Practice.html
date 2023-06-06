@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops practice</title>
+</head>
+<body>
+    <div class="c">
+        This is C class
+    </div>
+    <script>
+        // Iterating an Array
+        let arr = new Array('a','b','c','d','f');
+        arr.forEach(function f(element){
+            console.log(element);
+        })
+        for (element of arr) {
+            console.log(element + " - more better");
+        }
+
+        // Creating an Object
+        let myself = {
+            name: 'Ansh',
+            age: 20,
+            city: 'Ahmedabad',
+            college: 'IIITV',
+            Batch: '2021-25'
+        }
+        console.log(myself);
+
+        // Iterating any Object
+        for(key in myself) {
+            console.log(`${key} :  ${myself[key]}`);
+        }
+    </script>
+</body>
+</html>

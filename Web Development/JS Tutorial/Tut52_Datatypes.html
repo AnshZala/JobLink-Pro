@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2>Datatypes in JAVASCRIPT</h2>
+    <details>
+        <summary>There are two types of Datatypes in javascript</summary>
+        <ol type="1">
+            <li>Primitive datatype</li>
+            <li>Non-primitive datatype</li>
+        </ol>
+
+    </details>
+    <script>
+        // Primitive datatypes (Integer, String, Float, Boolean, Char)
+        let a = 34;
+        let b = "Ansh";
+        console.log(a);
+
+        // Non-primitive datatypes (Arrays, Stack, Queue, Objects)
+        // Object creation
+        let properties = {
+            name: "Ansh",
+            age: 20,
+            city: "Ahmedabad"
+        };
+        console.log(properties);
+        console.log(properties.name);
+        console.log(properties['city']);
+
+        // Arrays in JAVASCRIPT
+        let name = [1,2,3,"Ansh", undefined];
+        let newArr = new Array(3, 2, 1, 'Zala');
+        console.log(name);
+        console.log(newArr);
+
+        let empty = new Array(23);
+        console.log(empty);
+        empty.push("This is pushed");
+        console.log(empty);
+    </script>
+    <!-- Goto live server website and Right click >> Inspect >> Console -->
+</body>
+</html>
